@@ -13,6 +13,7 @@ server.use(express.json()); //Para recibir y enviar JSON
 dbConnection();
 
 server.use("/menus", require("./routes/menus"));
+server.use("/pedidos", require("./routes/pedidos"));
 
 server.listen(PORT, () => {
     console.log("Server iniciado en: ", PORT);

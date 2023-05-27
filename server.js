@@ -14,6 +14,7 @@ dbConnection();
 
 server.use("/menus", require("./routes/menus"));
 server.use("/pedidos", require("./routes/pedidos"));
+server.use("/users", require("./routes/users"));
 
 server.listen(PORT, () => {
     console.log("Server iniciado en: ", PORT);

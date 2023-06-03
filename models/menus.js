@@ -13,6 +13,10 @@ const MenusSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    img:{
+        type: String,
+        default: ""
+    },
     detail : {
         type: String
     }, 
